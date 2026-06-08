@@ -19,7 +19,6 @@ const images = [
   'images/gallery/IMG_20220110_182322.jpg',
   'images/gallery/IMG_20220110_182329.jpg',
   'images/gallery/IMG_20220110_183812.jpg',
-
   'images/gallery/IMG_9176.JPG',
   'images/gallery/IMG_9229.JPG',
   'images/gallery/IMG_9258.JPG',
@@ -43,7 +42,6 @@ const images = [
   'images/gallery/MRB_3759.jpg',
   "images/gallery/WhatsApp Image 2022-11-23 at 9.51.32 PM (2).jpeg",
   "images/gallery/WhatsApp Image 2022-11-24 at 11.00.23 AM (2).jpeg",
-  "images/gallery/WhatsApp Image 2022-11-24 at 11.00.23 AM (2).jpeg",
   "images/gallery/WhatsApp Image 2022-11-24 at 11.04.15 AM (2).jpeg",
   "images/gallery/WhatsApp Image 2022-11-24 at 11.05.28 AM.jpeg",
   "images/gallery/WhatsApp Image 2022-11-24 at 11.05.32 AM (1).jpeg"
@@ -54,11 +52,13 @@ let slideInterval;
 
 const slideshow = document.getElementById('slideshow');
 
+function ue(s) { return encodeURI(s); }
+
 function initSlideshow() {
   images.forEach((src, i) => {
     const div = document.createElement('div');
     div.className = 'slide' + (i === 0 ? ' active' : '');
-    div.style.backgroundImage = `url(${src})`;
+    div.style.backgroundImage = `url(${ue(src)})`;
     slideshow.appendChild(div);
   });
   startSlideshow();
@@ -107,7 +107,7 @@ function initGallery() {
   images.forEach((src, i) => {
     const item = document.createElement('div');
     item.className = 'gallery-item';
-    item.style.backgroundImage = `url(${src})`;
+    item.style.backgroundImage = `url(${ue(src)})`;
     item.addEventListener('click', () => openLightbox(i));
     grid.appendChild(item);
   });
@@ -118,7 +118,7 @@ function openLightbox(index) {
   overlay.className = 'lightbox';
   overlay.innerHTML = `
     <span class="lightbox-close">&times;</span>
-    <img class="lightbox-content" src="${images[index]}" />
+    <img class="lightbox-content" src="${ue(images[index])}" />
     <div class="lightbox-nav">
       <span class="lightbox-prev">&lsaquo;</span>
       <span class="lightbox-next">&rsaquo;</span>
@@ -144,13 +144,13 @@ function openLightbox(index) {
   overlay.querySelector('.lightbox-prev').addEventListener('click', (e) => {
     e.stopPropagation();
     current = (current - 1 + images.length) % images.length;
-    overlay.querySelector('.lightbox-content').src = images[current];
+    overlay.querySelector('.lightbox-content').src = ue(images[current]);
   });
 
   overlay.querySelector('.lightbox-next').addEventListener('click', (e) => {
     e.stopPropagation();
     current = (current + 1) % images.length;
-    overlay.querySelector('.lightbox-content').src = images[current];
+    overlay.querySelector('.lightbox-content').src = ue(images[current]);
   });
 }
 
