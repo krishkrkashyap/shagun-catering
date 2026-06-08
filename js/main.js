@@ -88,18 +88,12 @@ function showScreen(id) {
 
 document.getElementById('download-packages').addEventListener('click', (e) => {
   e.preventDefault();
-  const url = prompt('Paste Google Drive link for Catering Packages 2026:');
-  if (url) {
-    window.open(url, '_blank');
-  }
+  window.open('https://drive.google.com/file/d/1QT_c5nmXHelIQD4Gizgcr_DvLgOfh7uw/view?usp=drive_link', '_blank');
 });
 
 document.getElementById('download-dessert').addEventListener('click', (e) => {
   e.preventDefault();
-  const url = prompt('Paste Google Drive link for Dessert Bar Packages:');
-  if (url) {
-    window.open(url, '_blank');
-  }
+  window.open('https://drive.google.com/file/d/1_60nm3pysDxa_HCbaYV23zEinjHq0CzL/view?usp=sharing', '_blank');
 });
 
 function initGallery() {
