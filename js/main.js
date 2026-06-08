@@ -19,12 +19,7 @@ const images = [
   'images/gallery/IMG_20220110_182322.jpg',
   'images/gallery/IMG_20220110_182329.jpg',
   'images/gallery/IMG_20220110_183812.jpg',
-  'images/gallery/IMG_6254.jpg',
-  'images/gallery/IMG_6289.jpg',
-  'images/gallery/IMG_6300.jpg',
-  'images/gallery/IMG_6335.jpg',
-  'images/gallery/IMG_6341.jpg',
-  'images/gallery/IMG_9161.JPG',
+
   'images/gallery/IMG_9176.JPG',
   'images/gallery/IMG_9229.JPG',
   'images/gallery/IMG_9258.JPG',
@@ -48,7 +43,7 @@ const images = [
   'images/gallery/MRB_3759.jpg',
   "images/gallery/WhatsApp Image 2022-11-23 at 9.51.32 PM (2).jpeg",
   "images/gallery/WhatsApp Image 2022-11-24 at 11.00.23 AM (2).jpeg",
-  "images/gallery/WhatsApp Image 2022-11-24 at 11.00.27 AM (1).jpeg",
+  "images/gallery/WhatsApp Image 2022-11-24 at 11.00.23 AM (2).jpeg",
   "images/gallery/WhatsApp Image 2022-11-24 at 11.04.15 AM (2).jpeg",
   "images/gallery/WhatsApp Image 2022-11-24 at 11.05.28 AM.jpeg",
   "images/gallery/WhatsApp Image 2022-11-24 at 11.05.32 AM (1).jpeg"
