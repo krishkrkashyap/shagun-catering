@@ -36,7 +36,7 @@ html, body {
 
 #main-screen {
   justify-content: flex-start;
-  padding-top: 40px;
+  padding-top: 30px;
 }
 
 #main-screen .content {
@@ -53,6 +53,31 @@ html, body {
 #main-screen .content::-webkit-scrollbar-thumb {
   background: rgba(224,177,97,0.3);
   border-radius: 2px;
+}
+
+@media (max-height: 640px) {
+  #main-screen {
+    padding-top: 16px;
+  }
+  .logo {
+    height: 70px;
+  }
+  .logo-area {
+    margin-bottom: 8px;
+    padding: 6px 0;
+  }
+  .about-text {
+    font-size: 0.78rem;
+    margin-bottom: 6px;
+  }
+  .actions {
+    gap: 8px;
+    margin-top: 8px;
+  }
+  .btn {
+    padding: 12px;
+    font-size: 0.9rem;
+  }
 }
 
 .bg-overlay {
