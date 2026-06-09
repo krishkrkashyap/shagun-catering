@@ -28,7 +28,7 @@ const images = [
   'images/gallery/MRB_3659.jpg',
   'images/gallery/MRB_3752.jpg',
   'images/gallery/MRB_3759.jpg',
-  "images/gallery/WhatsApp Image 2022-11-24 at 11.05.28 AM.jpeg"
+  'images/gallery/event-1.jpeg'
 ];
 
 let currentSlide = 0;
