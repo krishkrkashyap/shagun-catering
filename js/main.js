@@ -8,43 +8,27 @@ const images = [
   'images/gallery/DSC00264.JPG',
   'images/gallery/DSC00298.JPG',
   'images/gallery/DSC00355.JPG',
-  'images/gallery/_DSC0541.JPG',
-  'images/gallery/_DSC0646.JPG',
-  'images/gallery/_DSC0658.JPG',
-  'images/gallery/_DSC0696.JPG',
-  'images/gallery/_DSC0767.JPG',
-  'images/gallery/_DSC0786.JPG',
-  'images/gallery/IMG_20220110_181153.jpg',
-  'images/gallery/IMG_20220110_182001.jpg',
-  'images/gallery/IMG_20220110_182322.jpg',
-  'images/gallery/IMG_20220110_182329.jpg',
-  'images/gallery/IMG_20220110_183812.jpg',
-  'images/gallery/IMG_9176.JPG',
-  'images/gallery/IMG_9229.JPG',
-  'images/gallery/IMG_9258.JPG',
-  'images/gallery/IMG_9260.JPG',
-  'images/gallery/IMG_9263.JPG',
-  'images/gallery/IMG_9300.JPG',
-  'images/gallery/IMG_9348.JPG',
-  'images/gallery/IMG_9377.JPG',
-  'images/gallery/IMG_9386.JPG',
-  'images/gallery/IMG_9413.JPG',
   'images/gallery/IMG-20251223-WA0014.jpg',
   'images/gallery/IMG-20251223-WA0015.jpg',
   'images/gallery/IMG-20251223-WA0033.jpg',
   'images/gallery/IMG-20251223-WA0065.jpg',
-  'images/gallery/IMG-20251223-WA0085.jpg',
   'images/gallery/IMG-20251223-WA0093.jpg',
-  'images/gallery/MRB_3596.jpg',
+  'images/gallery/IMG_20220110_181153.jpg',
+  'images/gallery/IMG_20220110_182001.jpg',
+  'images/gallery/IMG_20220110_182322.jpg',
+  'images/gallery/IMG_20220110_183812.jpg',
+  'images/gallery/IMG_9176.JPG',
+  'images/gallery/IMG_9229.JPG',
+  'images/gallery/IMG_9258.JPG',
+  'images/gallery/IMG_9348.JPG',
+  'images/gallery/IMG_9377.JPG',
+  'images/gallery/IMG_9386.JPG',
+  'images/gallery/IMG_9413.JPG',
   'images/gallery/MRB_3657.jpg',
   'images/gallery/MRB_3659.jpg',
   'images/gallery/MRB_3752.jpg',
   'images/gallery/MRB_3759.jpg',
-  "images/gallery/WhatsApp Image 2022-11-23 at 9.51.32 PM (2).jpeg",
-  "images/gallery/WhatsApp Image 2022-11-24 at 11.00.23 AM (2).jpeg",
-  "images/gallery/WhatsApp Image 2022-11-24 at 11.04.15 AM (2).jpeg",
-  "images/gallery/WhatsApp Image 2022-11-24 at 11.05.28 AM.jpeg",
-  "images/gallery/WhatsApp Image 2022-11-24 at 11.05.32 AM (1).jpeg"
+  "images/gallery/WhatsApp Image 2022-11-24 at 11.05.28 AM.jpeg"
 ];
 
 let currentSlide = 0;
@@ -85,16 +69,6 @@ function showScreen(id) {
     clearInterval(slideInterval);
   }
 }
-
-document.getElementById('download-packages').addEventListener('click', (e) => {
-  e.preventDefault();
-  window.open('https://drive.google.com/file/d/1QT_c5nmXHelIQD4Gizgcr_DvLgOfh7uw/view?usp=drive_link', '_blank');
-});
-
-document.getElementById('download-dessert').addEventListener('click', (e) => {
-  e.preventDefault();
-  window.open('https://drive.google.com/file/d/1_60nm3pysDxa_HCbaYV23zEinjHq0CzL/view?usp=sharing', '_blank');
-});
 
 function initGallery() {
   const grid = document.getElementById('gallery-grid');

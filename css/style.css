@@ -217,44 +217,6 @@ html, body {
   text-align: center;
 }
 
-.menu-categories {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  margin: 24px 0;
-}
-
-.menu-card {
-  background: rgba(255,255,255,0.06);
-  padding: 20px;
-  border-radius: 12px;
-  text-align: center;
-  border: 1px solid rgba(224,177,97,0.15);
-}
-
-.menu-card h3 {
-  color: #e0b161;
-  font-family: 'Playfair Display', serif;
-  font-size: 1rem;
-  margin-bottom: 6px;
-}
-
-.menu-card p {
-  color: #a89288;
-  font-size: 0.8rem;
-}
-
-.social-section {
-  text-align: center;
-  margin: 20px 0;
-}
-
-.social-section p {
-  color: #8a7a72;
-  font-size: 0.8rem;
-  margin-bottom: 8px;
-}
-
 .social-links {
   display: flex;
   gap: 16px;
